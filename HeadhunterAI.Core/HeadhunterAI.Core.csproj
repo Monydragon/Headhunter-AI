@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="LLamaSharp" Version="0.19.0" />
+      <PackageReference Include="LLamaSharp.Backend.Cpu" Version="0.19.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="DeepSeek-V3-Bf16-256x20B-BF16-00001-of-00035.gguf">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
+</Project>
